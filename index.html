@@ -855,6 +855,27 @@
     letter-spacing: 1px;
   }
 
+  .footer-id {
+  color: var(--acid);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.9;
+  position: relative;
+}
+
+.footer-id::before {
+  content: "↗";
+  margin-right: 6px;
+  color: var(--dim);
+  font-weight: 400;
+}
+
+.footer-id:hover {
+  opacity: 1;
+  text-shadow: 0 0 12px rgba(200,255,0,0.3);
+}  
+
   /* SCROLL ANIMATIONS */
   .reveal {
     opacity: 0;
@@ -1144,6 +1165,11 @@
 <footer>
   <div class="footer-logo">Avenoise</div>
   <div class="footer-copy">© 2026 · Windows Audio Scene Manager</div>
+  <div class="footer-id">
+    <a href="https://6bigjio.github.io/about_me/6bigjio-Systems.html" target="_blank">
+      // 6bIgJIo Systems
+    </a>
+  </div>  
 </footer>
 
 <script>
