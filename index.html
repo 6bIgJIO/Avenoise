@@ -1135,11 +1135,7 @@
         <li>1 activation per key</li>
         <li>No internet after activation</li>
       </ul>
-      <a href="#" class="btn-price btn-price-filled" onclick="openBuyWidget(event)">
-  Buy for $9
-</a>
-
-<div id="buy-widget-root" style="display:none; margin-top:24px;"></div>
+      <a href="http://t.me/yougoinnowhere" class="btn-price btn-price-filled">Buy for $9</a>
     </div>
   </div>
 
@@ -1178,26 +1174,6 @@
 </footer>
 
 <script>
-  function openBuyWidget(e) {
-  e.preventDefault();
-
-  const root = document.getElementById("buy-widget-root");
-
-  if (root.style.display === "block") {
-    root.style.display = "none";
-    root.innerHTML = "";
-    return;
-  }
-
-  root.style.display = "block";
-
-  fetch("https://6bigjio.github.io/Avenoise/widget-buy.html")
-    .then(r => r.text())
-    .then(html => {
-      root.innerHTML = html;
-    });
-  }
-  
   // Cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
