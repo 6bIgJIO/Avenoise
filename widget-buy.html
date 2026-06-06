@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#080808;--s:#101010;--b:#1e1e1e;--t:#d8d8d8;--d:#585858;--acid:#00f5ff;--f:'IBM Plex Mono',monospace}
+:root{--bg:#080808;--s:#101010;--b:#242424;--t:#f3f3f3;--d:#8a8a8a;--cyan:#00f5ff;--pink:#ff2d78;--acid:var(--cyan);--f:'IBM Plex Mono',monospace}
 body{background:var(--bg);color:var(--t);font-family:var(--f);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
 .widget{width:100%;max-width:520px}
 .steps{display:flex;align-items:center;gap:0;margin-bottom:40px}
@@ -18,7 +18,7 @@ body{background:var(--bg);color:var(--t);font-family:var(--f);min-height:100vh;d
 .step.active .step-num{border-color:var(--acid);color:var(--acid)}
 .step.done .step-num{background:var(--acid);color:#000;border-color:var(--acid)}
 .step-line{flex:1;height:1px;background:var(--b);margin:0 12px}
-.plan-single{background:var(--s);border:1px solid rgba(200,255,0,0.3);padding:28px 32px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 40px rgba(200,255,0,0.05)}
+.plan-single{background:var(--s);border:1px solid rgba(0,245,255,.35);padding:28px 32px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 0 18px rgba(0,245,255,.12),0 0 42px rgba(255,45,120,.08)}
 .plan-single-name{font-size:16px;color:#fff;font-weight:700}
 .plan-single-note{font-size:11px;color:var(--d);margin-top:4px}
 .plan-single-price{font-size:36px;color:var(--acid);font-weight:700;text-align:right;line-height:1}
@@ -35,16 +35,16 @@ body{background:var(--bg);color:var(--t);font-family:var(--f);min-height:100vh;d
 .copy-btn{background:transparent;border:1px solid var(--b);color:var(--d);padding:6px 12px;font-family:var(--f);font-size:10px;letter-spacing:1px;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .2s}
 .copy-btn:hover{border-color:var(--acid);color:var(--acid)}
 .wallet-note{font-size:11px;color:var(--d);margin-top:12px;line-height:1.6}
-.invoice-id-box{background:var(--bg);border:1px solid rgba(200,255,0,0.15);padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between}
+.invoice-id-box{background:var(--bg);border:1px solid rgba(255,45,120,.25);padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;justify-content:space-between}
 .invoice-id-label{font-size:10px;letter-spacing:2px;color:var(--d);text-transform:uppercase}
 .invoice-id-val{font-size:14px;color:var(--acid);letter-spacing:3px}
 .tx-note{font-size:11px;color:var(--d);margin-bottom:20px;line-height:1.7}
 .status-box{text-align:center;padding:48px 24px}
 .status-icon{font-size:48px;margin-bottom:24px}
-.status-title{font-size:20px;letter-spacing:3px;color:var(--acid);margin-bottom:16px}
+.status-title{font-size:20px;letter-spacing:3px;color:var(--pink);margin-bottom:16px}
 .status-text{font-size:12px;color:var(--d);line-height:1.8;max-width:400px;margin:0 auto}
 .btn{width:100%;padding:14px;font-family:var(--f);font-size:12px;letter-spacing:3px;text-transform:uppercase;border:none;cursor:pointer;font-weight:700;transition:all .2s}
-.btn-acid{background:var(--acid);color:#000}
+.btn-acid{background:linear-gradient(90deg,var(--cyan),var(--pink));color:#000}
 .btn-acid:hover{opacity:.85}
 .btn-acid:disabled{background:var(--b);color:var(--d);cursor:not-allowed}
 .error{font-size:11px;color:#ff4444;margin-top:8px;letter-spacing:1px}
